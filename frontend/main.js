@@ -2,6 +2,12 @@ let localstream;
 let remotestream;
 let peerconnection;
 
+let APP_ID = '17efe9ea06594eeb86780a955fd30b91';
+let token = null;
+let uid = String(Math.floor(Math.random() * 10000));
+let clinet;
+let channel;
+
 const servers = {
     iceServers:[
         {
